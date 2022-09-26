@@ -11,8 +11,7 @@ let spinnerComponents = [
 ];
 
 const writeSpinner = function () {
-  let time = 0;
-
+  //i will act as our incrementor
   spinnerComponents.forEach((component, i) => {
     setTimeout(() => process.stdout.write(component), 500 * i);
   });
